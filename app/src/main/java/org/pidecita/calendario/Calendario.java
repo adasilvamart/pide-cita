@@ -1,9 +1,7 @@
 package org.pidecita.calendario;
 
-import java.sql.Time;
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
+
 import java.util.List;
 
 public class Calendario {
@@ -31,3 +29,11 @@ public class Calendario {
                 .allMatch(cita -> cita.getFecha() != nuevaCita.getFecha());
     }
 }
+
+/*
+ * Mi idea es: 
+ * - coges la fecha de la nueva cita.
+ * - compruebas si existe en la lisa de citas.
+ * - Si no existe selecciona la cita anterior y calcula el final de esa cita sumandole los minutos del servicio.
+ * - Comprobamos si la fecha y hora de la cita nueva está dentro del inicio y fin de la cita anterior. 
+ */

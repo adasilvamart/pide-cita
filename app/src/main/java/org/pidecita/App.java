@@ -19,6 +19,7 @@ public class App {
         Cliente manoli = new Cliente("Manoli", 608080808);
         Servicio limpFacial = new LimpiezaFacial();
         Servicio micro = new MicroPigmentacion();
+        
         Calendar fecha = new GregorianCalendar(2024, Calendar.JUNE, 1, 10, 30);
 
         Cita cita = new Cita(limpFacial, manola, fecha);
